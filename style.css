@@ -1,0 +1,474 @@
+html {
+    background-color: #7f7f7f;
+    font-family: Arial, sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    background-color: #4472c4;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+
+.headerContainer {
+    position: relative;
+    left: 90%;
+    top: -55.5px;
+    height: 0px;
+    width: 0px;
+}
+
+nav {
+    background-color: #4472c4;
+    position: fixed;
+    top: 80px;
+    left: 0px;
+    width: 100%;
+    height: 30px;
+    text-align: left;
+    line-height: 30px;
+}
+
+.navSpacing {
+    padding-left: 20px;
+}
+
+
+.contentContainer {
+    background-color: #4472c4;
+    position: absolute;
+    top: 132px;
+    left: 25px;
+    height: 420px;
+    width: 96%;
+    border: 2px black solid;
+    color: black;
+}
+
+article {
+    background-color: blue;
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    height: 370px;
+    width: 46%;
+}
+
+.article {
+    background-color: #ffe699;
+    position: absolute;
+    top: 2%;
+    left: 1.5%;
+    width: 97%;
+    height: 96%;
+    text-align: center;
+    line-height: 20px;
+}
+
+aside {
+    background-color: #ff0000;
+    position: absolute;
+    top: 25px;
+    right: 80px;
+    height: 370px;
+    width: 35%;
+}
+
+.aside {
+    position: absolute;
+    top: 2.5%;
+    left: 10%;
+    height: 94.75%;
+    width: 80%;
+}
+
+footer {
+    background-color: #4472c4;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    height: 30px;
+    width: 100%;
+    text-align: left;
+    line-height: 30px;
+    padding-left: 20px;
+}
+
+/* Main box for the Pokémon card */
+.background {
+    height: 400px;
+    width: 275px;
+    background-color: #ffe164;
+    border-radius: 5%;
+    position: absolute;
+    top: 2.5%;
+    left: 10%;
+}
+
+/* Green box for content on the Pokémon card */
+.content {
+    height: 370px;
+    width: 245px;
+    background-color: #8fc04f;
+    position: relative;
+    top: 3.7%;
+    left: 5.5%;
+}
+
+/* Box to cut corner of frame */
+.topleftCorner {
+    position: relative;
+    height: 10px;
+    width: 10px;
+    transform: rotate(45deg);
+    background-color: #ffe164;
+    top: -5px;
+    left: -5px;
+}
+
+/* Box to cut corner of frame */
+.toprightCorner {
+    position: relative;
+    height: 10px;
+    width: 10px;
+    transform: rotate(45deg);
+    background-color: #ffe164;
+    top: -15px;
+    left: 98%;
+}
+
+/* Box to cut corner of frame */
+.bottomleftCorner {
+    position: relative;
+    height: 10px;
+    width: 10px;
+    transform: rotate(45deg);
+    background-color: #ffe164;
+    left: -5px;
+    top: 93.2%;
+}
+
+/* Box to cut corner of frame */
+.bottomrightCorner {
+    position: relative;
+    height: 10px;
+    width: 10px;
+    transform: rotate(45deg);
+    background-color: #ffe164;
+    left: 98%;
+    top: 90.6%;
+}
+
+/* Space for Image */
+.image {
+    width: 90%;
+    height: 35%;
+    border: 2px solid #b8b7b1;
+    /* box-shadow: [horizontal offset] [vertical offset] [blur radius] [spread radius] [color]; */
+    box-shadow: 0px -1px 5px 0px black;
+    position: absolute;
+    top: 32px;
+    left: 10px;
+}
+
+/* Text Under Image */
+.imageFooter {
+    width: 90%;
+    height: 12px;
+    border: 2px solid #b8b7b1;
+    background-color: #c4c4c7;
+    box-shadow: 0px 2px 4px 0px black;
+    position: relative;
+    top: 33%;
+    left: 10px;
+    line-height: 0px;
+    text-align: center;
+    font-size: 8px;
+}
+
+/* Pokémon Name */
+.headerPokemon {
+    height: 4%;
+    width: 45%;
+    position: absolute;
+    top: 0.25%;
+    left: 15%;
+    font: bold;
+    font-size: 18pt;
+    font-family: sans-serif;
+}
+
+/* HP */
+.hpBox {
+    height: 3%;
+    width: 2%;
+    position: absolute;
+    top: 110%;
+    left: 115%;
+    font-size: 8pt;
+    font-family: sans-serif;
+}
+
+/* Total HP */
+.headerBox {
+    height: 4%;
+    width: 5%;
+    position: absolute;
+    top: 15%;
+    left: 125%;
+    font: bold;
+    font-family: sans-serif;
+}
+
+/* Pokémon Rarity (Basic) */
+.rarity {
+    height: 80%;
+    width: 35%;
+    position: absolute;
+    background-color: silver;
+    box-shadow: 0px 0px 2px 1px silver;
+    top: 60%;
+    left: -38%;
+    font-size: 8pt;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Type */
+.type {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 1px;
+    left: 182px;
+}
+
+/* Attack Info */
+.hornLeechContainer {
+    height: 45px;
+    width: 220px;
+    position: absolute;
+    top: 205px;
+    left: 10px;
+    font-family: sans-serif;
+}
+
+/* Horn Leech */
+.hornLeech {
+    position: relative;
+    text-align: center;
+    font-size: 16px;
+    top: -30px;
+}
+
+/* Horn Leech Damage */
+.hornLeechDamage {
+    position: relative;
+    text-align: right;
+    font-size: 16px;
+    top: -58px;
+}
+
+/* Horn Leech Description */
+.hornLeechDescription {
+    position: relative;
+    text-align: left;
+    font-size: 11px;
+    top: -65px;
+}
+
+/* Attack Info */
+.calmStrikeContainer {
+    height: 45px;
+    width: 220px;
+    position: absolute;
+    top: 250px;
+    left: 10px;
+    font-family: sans-serif;
+}
+
+/* Calm Strike */
+.calmStrike {
+    position: relative;
+    text-align: center;
+    font-size: 16px;
+    top: -30px;
+    left: -1px;
+}
+
+/* Calm Strike Damage */
+.calmStrikeDamage {
+    position: relative;
+    text-align: right;
+    font-size: 16px;
+    top: -58px;
+    left: 8px;
+}
+
+/* Calm Strike Description */
+.calmStrikeDescription {
+    position: relative;
+    text-align: left;
+    font-size: 11px;
+    top: -65px;
+}
+
+/* Container for Weakness Info */
+.weaknessContainer {
+    height: 15px;
+    width: 150px;
+    position: absolute;
+    background-color: silver;
+    top: 316px;
+    left: -5px;
+    font-size: 7px;
+    font-family: sans-serif;
+}
+
+/* weakness Text Placement */
+.weaknessText {
+    position: absolute;
+    top: 3.5px;
+    left: 8px;
+}
+
+/* Container for Weakness Info */
+.weaknessImage {
+    position: absolute;
+    left: 47px;
+    bottom: -0.5px;
+}
+
+/* multiplier Text Placement */
+.multiplier {
+    position: absolute;
+    top: 0px;
+    left: 62px;
+    font-size: 10px;
+}
+
+/* multiplier number Text Placement */
+.multiplierNumber {
+    position: absolute;
+    top: 1px;
+    left: 70px;
+    font-size: 12px;
+}
+
+/* resistance Text Placement */
+.resistance {
+    position: absolute;
+    top: 1px;
+    left: 85px;
+}
+
+/* Container for retreat information */
+.retreatContainer {
+    height: 15px;
+    width: 95px;
+    position: absolute;
+    background-color: silver;
+    top: 316px;
+    left: 156px;
+    font-size: 7px;
+    font-family: sans-serif;
+}
+
+/* used to place retreat text */
+.retreatPlacement {
+    position: relative;
+    top: 3.5px;
+    left: 6px;
+}
+
+/* used to place the retreat cost images */
+.retreatCost {
+    position: relative;
+    left: 35px;
+    bottom: 7px;
+}
+
+/* Container for Pokémon Info */
+.infoContainerLeft {
+    height: 35px;
+    width: 100px;
+    position: absolute;
+    top: 337px;
+    left: 15px;
+    font-size: 7px;
+}
+
+/* Description of Copyright for Pokémon */
+.copyrightPokémon {
+    position: relative;
+    text-align: left;
+    bottom: 0px;
+}
+
+/* Placement for Promo Code */
+.promoCode {
+    position: absolute;
+    left: 25px;
+    bottom: 13px;
+    font-size: 8px;
+}
+
+/* Container for Pokémon Info */
+.infoContainerRight {
+    height: 35px;
+    width: 130px;
+    position: absolute;
+    top: 340px;
+    left: 110px;
+}
+
+/* Description of Pokémon */
+.infoPokémon {
+    position: relative;
+    text-align: left;
+    font-size: 7px;
+}
+
+/* Box to cut corner of frame */
+.bottomleftCorner {
+    position: relative;
+    height: 10px;
+    width: 10px;
+    transform: rotate(45deg);
+    background-color: #ffe164;
+    left: -5px;
+    top: 93.2%;
+}
+
+/* Box to cut corner of frame */
+.greenCorner {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    transform: rotate(45deg);
+    background-color: #8fc04f;
+    right: 85px;
+    bottom: 51px;
+}
+
+/* Box to cut corner of frame */
+.yellowCorner {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    transform: rotate(45deg);
+    background-color: #ffe164;
+    left: -12px;
+    bottom: 51px;
+}
